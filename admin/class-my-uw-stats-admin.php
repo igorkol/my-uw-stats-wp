@@ -51,6 +51,7 @@ class my_uw_stats_Admin {
 
 		$this->my_uw_stats = $my_uw_stats;
 		$this->version = $version;
+		var_dump ($version);
 
 	}
 
@@ -102,11 +103,6 @@ class my_uw_stats_Admin {
 
 }
 
-/**
- * @internal never define functions inside callbacks.
- * these functions could be run multiple times; this would result in a fatal error.
- */
- 
 /**
  * custom option and settings
  */
