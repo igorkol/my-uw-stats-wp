@@ -104,14 +104,12 @@ class my_uw_stats_Admin {
 
 function my_uw_stats_options_page()
 {
-    add_menu_page(
+	add_management_page(
         'my_uw_stats',
         'my_uw_stats Options',
         'manage_options',
         'my_uw_stats',
-        'my_uw_stats_options_page_html',
-        plugin_dir_url(__FILE__) . 'images/icon_wporg.png',
-        20
+        'my_uw_stats_options_page_html'
     );
 }
 add_action('admin_menu', 'my_uw_stats_options_page');
