@@ -197,7 +197,7 @@ function my_uw_stats_settings_init() {
 	*/
    function my_uw_stats_options_page() {
 	// add top level menu page
-	add_management_page(
+	add_menu_page(
 	'my_uw_stats',
 	'my_uw_stats Options',
 	'manage_options',
