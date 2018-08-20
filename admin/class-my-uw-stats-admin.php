@@ -146,7 +146,7 @@ class my_uw_stats_Admin {
 	*/
    function my_uw_stats_options_page() {
 	// add top level menu page
-	add_management_page(
+	add_options_page(
 	'My Upwork Statistics',
 	'Upwork Statistics Options',
 	'manage_options',
