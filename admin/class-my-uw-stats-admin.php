@@ -100,4 +100,8 @@ class my_uw_stats_Admin {
 
 	}
 
+	public function my_uw_stats_settings_init() {
+		// register a new setting for "my_uw_stats" page
+		register_setting( 'my_uw_stats', 'my_uw_stats_options' );
+
 }
