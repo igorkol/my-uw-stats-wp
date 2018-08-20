@@ -33,7 +33,8 @@ function my_uw_stats_options_page_html()
             ?>
         </form>
     </div>
-
+    <?php
+}
 
 ?>
 

@@ -100,8 +100,18 @@ class my_uw_stats_Admin {
 
 	}
 
-	public function my_uw_stats_settings_init() {
-		// register a new setting for "my_uw_stats" page
-		register_setting( 'my_uw_stats', 'my_uw_stats_options' );
-
 }
+
+function my_uw_stats_options_page()
+{
+    add_menu_page(
+        'my_uw_stats',
+        'my_uw_stats Options',
+        'manage_options',
+        'my_uw_stats',
+        'my_uw_stats_options_page_html',
+        plugin_dir_url(__FILE__) . 'images/icon_wporg.png',
+        20
+    );
+}
+add_action('admin_menu', 'my_uw_stats_options_page');
