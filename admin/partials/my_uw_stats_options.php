@@ -80,7 +80,7 @@ class my_uw_stats_options {
 
 	public function my_uw_stats_section_developers_cb( $args ) {
 		?>
-        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'You need to apply first to get an API access from Upwork. Go to https://bla.com first', 'my_uw_stats' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'You need to apply first to get an API access from Upwork. Go to <a href="https://developers.upwork.com/?lang=python#getting-started">Upwork API reference</a> and register your App', 'my_uw_stats' ); ?></p>
 		<?php
 	}
 
