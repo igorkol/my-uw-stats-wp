@@ -76,6 +76,7 @@ class my_uw_stats {
 
 		$this->load_dependencies();
 		$this->load_partials();
+		$this->load_includes();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
@@ -134,6 +135,16 @@ class my_uw_stats {
 		 * core plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/partials/my-uw-stats-admin-display.php';
+
+	}
+
+	private function load_includes() {
+
+		/**
+		 * The class responsible for orchestrating the actions and filters of the
+		 * core plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/includes/my-uw-stats-admin-pages.php';
 
 	}
 
