@@ -58,6 +58,7 @@ class my_uw_stats_Admin {
 
 	public function admin_pages_hooks () {
 		add_action( 'admin_menu', array("my_uw_stats_admin_pages", "init"));
+
 	}
 
 	/**

@@ -68,7 +68,7 @@ class my_uw_stats {
 	 */
 	public function __construct() {
 		if ( defined( 'MY-UW-STATS_VERSION' ) ) {
-			$this->version = MY-UW-STATS_VERSION;
+			$this->version = MY_UW_STATS_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
@@ -135,6 +135,8 @@ class my_uw_stats {
 		 * core plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/partials/my-uw-stats-admin-display.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/partials/my_uw_stats_options.php';
+		
 
 	}
 
