@@ -82,7 +82,7 @@ class my_uw_stats_options {
 		?>
 		<p id="<?php echo esc_attr( $args['id'] ); ?>">
 		<?php _e( 'You need to apply first to get an API access from Upwork. 
-					Go to <a href="https://developers.upwork.com/?lang=python#getting-started">Upwork API reference</a> and register your App.', 
+					Go to <a href="https://developers.upwork.com/?lang=python#getting-started" target="_blank">Upwork API reference</a> and register your App.', 
 					'my_uw_stats' ); ?></p>
 		<?php
 	}

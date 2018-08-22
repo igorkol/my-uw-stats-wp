@@ -25,8 +25,8 @@ class my_uw_stats_admin_display {
 	}
 
 	public function __construct() {
-		$this->admin_settings_init();
-		$this->my_uw_stats_admin_pages_html();
+		//$this->admin_settings_init();
+		//$this->my_uw_stats_admin_pages_html();
 	}
 
 	public function admin_settings_init() {
